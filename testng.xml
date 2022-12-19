@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<!--<include name="smoke"></include>-->
+<!--<exclude name="regression"></exclude>-->
+
+</run>
+
+</groups>
+
+<listeners>
+<listener class-name="com.paramedutech.automation.ListenersUse"></listener>
+</listeners>
+  <test thread-count="2" name="Test" parallel="methods">
+    <classes>
+      
+    
+     <class name="testNGProgramms.ParallelExucutionProgram"/>
+      <!--<class name="testNGProgramms.GroupsIntestNgExamples"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
