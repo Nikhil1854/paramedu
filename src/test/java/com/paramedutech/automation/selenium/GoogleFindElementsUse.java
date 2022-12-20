@@ -20,7 +20,7 @@ public class GoogleFindElementsUse {
 		
 		List<WebElement> list=driver.findElements(By.xpath("//ul//div[@class='wM6W7d']/span"));
 		
-		System.out.println("Search result="+list.size());
+		System.out.println("Search result= "+list.size());
 		
 		for(WebElement elm:list)
 		{
