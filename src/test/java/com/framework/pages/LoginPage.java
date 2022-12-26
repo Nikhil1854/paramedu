@@ -1,8 +1,12 @@
 package com.framework.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.paramedutech.automation.Utility;
 
 public class LoginPage extends BasePage{
 	WebDriver driver;
@@ -37,11 +41,11 @@ public class LoginPage extends BasePage{
 		  loginButton = driver.findElement(By.xpath("//input[@type='submit']"));
 	}
 	
-	public void loginToApplication() {
+	public void loginToApplication() throws IOException {
 		
 		clickOnLoginLink();
-		getUserNameTextBox().sendKeys("niks@gmail.com");
-		getPasswordTextBox().sendKeys("wadikar");
+		getUserNameTextBox().sendKeys(Utility.getProperty("userId"));
+		getPasswordTextBox().sendKeys(Utility.getProperty("password"));
 		getLoginButton().click();
 	}
 }

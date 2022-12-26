@@ -16,6 +16,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.CellType;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -147,6 +148,11 @@ public class Utility {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
+	public static void scrollIntoView(WebDriver driver,WebElement element)
+	{
+		JavascriptExecutor javaScriptExecutor = (JavascriptExecutor) driver;
+		javaScriptExecutor.executeScript("arguments[0].scrollIntoView(true);",element);
+	}
 	
 	}
 

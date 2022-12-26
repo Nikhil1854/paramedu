@@ -1,21 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-16T19:10:36 IST" name="Default suite" finished-at="2022-12-16T19:10:43 IST" duration-ms="6594">
+  <suite started-at="2022-12-23T13:58:16 IST" name="Suite" finished-at="2022-12-23T13:58:42 IST" duration-ms="26894">
     <groups>
     </groups>
-    <test started-at="2022-12-16T19:10:36 IST" name="Default test" finished-at="2022-12-16T19:10:43 IST" duration-ms="6594">
-      <class name="com.framework.testcases.LoginFunctionality">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.framework.testcases.LoginFunctionality@4efc180e]" started-at="2022-12-16T19:10:36 IST" name="setUp" finished-at="2022-12-16T19:10:41 IST" duration-ms="4577" status="PASS">
+    <test started-at="2022-12-23T13:58:16 IST" name="Test" finished-at="2022-12-23T13:58:42 IST" duration-ms="26894">
+      <class name="testNGProgramms.ParallelExucutionProgram">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:16 IST" name="getDriver" finished-at="2022-12-23T13:58:18 IST" duration-ms="1915" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyValidLogin()[pri:0, instance:com.framework.testcases.LoginFunctionality@4efc180e]" started-at="2022-12-16T19:10:41 IST" name="verifyValidLogin" finished-at="2022-12-16T19:10:43 IST" duration-ms="1955" status="PASS">
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:16 IST" name="getDriver" finished-at="2022-12-23T13:58:18 IST" duration-ms="1915" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyValidLogin -->
-      </class> <!-- com.framework.testcases.LoginFunctionality -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:16 IST" name="getDriver" finished-at="2022-12-23T13:58:18 IST" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:16 IST" name="getDriver" finished-at="2022-12-23T13:58:18 IST" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="mavenSite()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:18 IST" name="mavenSite" finished-at="2022-12-23T13:58:24 IST" duration-ms="6052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mavenSite -->
+        <test-method signature="testngSite()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:18 IST" name="testngSite" finished-at="2022-12-23T13:58:21 IST" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testngSite -->
+        <test-method signature="zerodaSite()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:18 IST" name="zerodaSite" finished-at="2022-12-23T13:58:42 IST" duration-ms="24935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zerodaSite -->
+        <test-method signature="amazoneSite()[pri:0, instance:testNGProgramms.ParallelExucutionProgram@73e22a3d]" started-at="2022-12-23T13:58:18 IST" name="amazoneSite" finished-at="2022-12-23T13:58:42 IST" duration-ms="24943" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b0542f9906bf9239db08f82b0dbb3da4, get {url=https://demoqa.com/alerts}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ROHANC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61653/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b0542f9906bf9239db08f82b0dbb3da4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b0542f9906bf9239db08f82b0dbb3da4, get {url=https://demoqa.com/alerts}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ROHANC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61653/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b0542f9906bf9239db08f82b0dbb3da4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at testNGProgramms.ParallelExucutionProgram.amazoneSite(ParallelExucutionProgram.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazoneSite -->
+      </class> <!-- testNGProgramms.ParallelExucutionProgram -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

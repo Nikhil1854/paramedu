@@ -1,9 +1,13 @@
 package testNGProgramms;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import net.bytebuddy.implementation.Implementation;
 
 public class ParallelExucutionProgram {
 	WebDriver driver;
@@ -11,15 +15,18 @@ public class ParallelExucutionProgram {
 	
 	public void getDriver()
 	{
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		
 		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		
 	}
 	
 	@Test
 	public void amazoneSite()
 	{
-		driver.get("https://www.amazon.in/");
+		driver.get("https://demoqa.com/alerts");
 	}
 	
 	@Test

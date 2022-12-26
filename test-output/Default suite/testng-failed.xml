@@ -5,6 +5,7 @@
     <classes>
       <class name="com.framework.testcases.LoginFunctionality">
         <methods>
+          <include name="takeScreenShotOnFailure"/>
           <include name="verifyValidLogin"/>
           <include name="setUp"/>
         </methods>

@@ -11,12 +11,12 @@
 </groups>
 
 <listeners>
-<listener class-name="com.paramedutech.automation.ListenersUse"></listener>
+<!--<listener class-name="com.paramedutech.automation.ListenersUse"></listener>-->
 </listeners>
-  <test thread-count="2" name="Test" parallel="methods">
+  <test thread-count="4" name="Test" parallel="methods">
     <classes>
       
-    
+    <!--<class name="testNGProgramms.HardAssertPrograms"/>-->
      <class name="testNGProgramms.ParallelExucutionProgram"/>
       <!--<class name="testNGProgramms.GroupsIntestNgExamples"/>-->
     </classes>

@@ -66,4 +66,10 @@ public class BasePage {
 		getLoginLink().click();
 	}
 	
+	public String getWebElementText(WebElement element) 
+	
+	{
+		return element.getText();
+	}
+	
 }
